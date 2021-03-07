@@ -1,0 +1,48 @@
+.about-me-modal{
+    max-width: fit-content!important;
+}
+
+.about-me-modal-body{
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+.about-me-modal-header{
+    border-bottom: none!important;
+}
+
+.project-link{
+    width: 45px;
+}
+
+.links-wrapper{
+    bottom: 10px;
+    position: absolute;
+}
+
+.project-image{
+    width: 230px;
+    margin: 0 auto;
+}
+
+.project-card{
+    text-align: center;
+    height: 400px;
+    box-shadow: 0 0 3px 0px #000000;
+    width: 400px;
+    align-items: center;
+}
+
+.project-card > .card-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.pdf-document{
+    cursor: pointer;
+}
+
+.nav-item{
+    cursor: pointer;
+}

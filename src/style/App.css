@@ -1,0 +1,29 @@
+*::-webkit-scrollbar {width:5px;height:3px;}
+*::-webkit-scrollbar-thumb {height:50px; background-color:rgba(124,122,122,1); border-radius:3px;}
+*::-webkit-scrollbar-corner {background-color:rgba(238,238,238,1);}
+
+.App{
+    background: #090909;
+}
+
+.app-container{
+    min-height: 100vh;
+}
+
+.main-row{
+    min-height: 95vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.profile-photo{
+    float: right;
+    width: 300px;
+    border-radius: 100%;
+    background: rgb(255 255 255 / 0.7);
+    border: 3px solid #000;
+    -webkit-box-shadow: inset 0px 0px 41px -2px rgba(0,0,0,0.67);
+    -moz-box-shadow: inset 0px 0px 41px -2px rgba(0,0,0,0.67);
+    box-shadow: inset 0px 0px 41px -2px rgba(0,0,0,0.67);
+}

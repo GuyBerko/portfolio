@@ -1,0 +1,123 @@
+.contact-me-header{
+    justify-content: center!important;
+}
+
+.contact-me-header > h5{
+    font-size: 2rem!important;
+    color: #444444;
+}
+.left-block > h3, .left-block > h4, .left-block > h6{
+    color: #444444;
+}
+
+.contact-me-body{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-me-footer{
+    justify-content: space-evenly!important;
+}
+
+.or-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.or-wrapper > hr{
+    width: 42%;
+}
+
+.or-wrapper > h4{
+    width: 15%;
+}
+
+a, a:hover{
+    text-decoration: none!important;
+}
+
+.left-block{
+    text-align: center;
+    border-right: 1px solid #dee2e6;
+    max-width: 350px;
+    padding-right: 30px;
+}
+
+.right-block{
+    min-width: 300px;
+}
+
+.form-group{
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom: 1em;
+}
+
+label, input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+}
+  
+input {
+    font-size: 1.5em;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
+}
+  
+input:focus {
+    outline: 0;
+    border-bottom: 1px solid #666;
+}
+  
+label {
+    letter-spacing: 0.05em;
+    margin-bottom: 0!important;
+}
+  /**
+  * Translate down and scale the label up to cover the placeholder,
+  * when following an input (with placeholder-shown support).
+  * Also make sure the label is only on one row, at max 2/3rds of the
+  * field—to make sure it scales properly and doesn't wrap.
+  */
+input:placeholder-shown + label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 1.6rem) scale(1.5);
+    padding-left: 8px;
+}
+  /**
+  * By default, the placeholder should be transparent. Also, it should 
+  * inherit the transition.
+  */
+::-webkit-input-placeholder, input::placeholder{
+    opacity: 0;
+    transition: inherit;
+}
+/**
+* Show the placeholder when the input is focused.
+*/
+input:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+/**
+* When the element is focused, remove the label transform.
+* Also, do this when the placeholder is _not_ shown, i.e. when 
+* there's something in the input at all.
+*/
+input:not(:placeholder-shown) + label,
+input:focus + label {
+    transform: translate(0, 0) scale(1);
+    color: #1E90FF;
+    padding: 0;
+}
