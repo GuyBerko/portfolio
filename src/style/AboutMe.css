@@ -2,11 +2,6 @@
   max-width: fit-content !important;
 }
 
-.about-me-modal-body {
-  max-height: 75vh;
-  overflow-y: auto;
-}
-
 .about-me-modal-header {
   border-bottom: none !important;
 }

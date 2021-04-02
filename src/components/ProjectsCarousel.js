@@ -27,8 +27,8 @@ const projects = [
   },
   {
     name: 'XTickets',
-    description: 'Node.js and react server side rendering application using a microservices design pattern. The application designated for buying and selling tickets. ',
-    image: 'https://www.jimdo.com/static/6ddd0047c5c518accffa2abb6db438c9/80ee9/hero_visual_en.webp',
+    description: 'XTicket it\'s an application designated for buying and selling tickets. The application was built in a microservices design pattern. The backend was written with Node.js and typescript and the client was written with React server side rendering.',
+    image: 'https://storage.googleapis.com/portfolio-309012/xtickets-desktop2.PNG',
     links: {
       site: 'https://guy-berkovich.com',
       github: 'https://github.com/GuyBerko/xtickets'
