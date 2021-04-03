@@ -16,16 +16,18 @@ app.post('/api/contactForm', async (req, res) => {
     throw new Error('Request not valid');
   }
 
+  const { SMS_API_URL, SMS_KEY, SMS_USER, SMS_PASS, SMS_RECIPIENT } = process.env;
+
   const msg = `
     name:${name}<br />email:${email}<br />msg:${message}
   `;
 
-  const result = await axios.post('https://www.sms4free.co.il/ApiSMS/SendSMS', {
-    key: 'C1dPmveuS',
-    user: '0548114549',
-    pass: '66887628',
+  const result = await axios.post(SMS_API_URL, {
+    key: SMS_KEY,
+    user: SMS_USER,
+    pass: SMS_PASS,
     sender: 'Portfolio',
-    recipient: '0548114540',
+    recipient: SMS_RECIPIENT,
     msg
   });
 
