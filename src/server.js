@@ -19,7 +19,7 @@ app.post('/api/contactForm', async (req, res) => {
   const { SMS_API_URL, SMS_KEY, SMS_USER, SMS_PASS, SMS_RECIPIENT } = process.env;
 
   const msg = `
-    name:${name}<br />email:${email}<br />msg:${message}
+    name:${name} | email:${email} | msg:${message}
   `;
 
   const result = await axios.post(SMS_API_URL, {
