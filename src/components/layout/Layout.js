@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Particles from 'react-particles-js';
 import Animate from 'react-smooth';
-import { Container } from 'reactstrap';
 
 import particlesParams from '../../const/particles';
 import '../../style/Layout.css';
@@ -11,10 +10,10 @@ const Layout = props => {
     return (
         <Animate to="1" from="0" attributeName="opacity">
             <Particles
-                params={particlesParams}
+                params={ particlesParams }
                 className="particle"
             />
-            {props.children}
+            {props.children }
         </Animate>
     )
 }
