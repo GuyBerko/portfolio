@@ -1,23 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'reactstrap';
 
 import '../../style/Footer.css';
 
-const Footer = props => {
+const Footer = () => {
     return (
-        <Container className="footer">
+        <Container className="footer nonselectable">
             <Row>
-                <Col xl={12}>
-                    Copyright &#169; 2019-{(new Date().getFullYear())} <strong>Guy Berkovich</strong>
+                <Col xl={ 12 }>
+                    Copyright &#169; 2019-{ (new Date().getFullYear()) } <strong>Guy Berkovich</strong>
                 </Col>
             </Row>
         </Container>
     )
-}
-
-Footer.propTypes = {
-
 }
 
 export default Footer
