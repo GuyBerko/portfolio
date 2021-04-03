@@ -14,6 +14,7 @@ import {
     Col,
 } from 'reactstrap';
 import { Document, Page, pdfjs } from "react-pdf";
+import CV from '../../assets/img/Guy-Berkovich-CV.pdf';
 
 import ProjectsCarousel from '../ProjectsCarousel';
 import '../../style/AboutMe.css';
@@ -54,7 +55,7 @@ const AboutMe = ({ isOpen, toggle }) => {
                         <Row>
                             <Col sm="12">
                                 <Document
-                                    file="https://storage.googleapis.com/portfolio-309012/Guy-Berkovich-CV.pdf"
+                                    file={ CV }
                                     className='pdf-document'
                                     onClick={ gotoDocs }>
                                     <Page pageNumber={ 1 } />
