@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "classnames": "^2.2.6",
     "express": "^4.17.1",
@@ -19,8 +20,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "server": "nodemon index.js",
-    "dev": "concurrently \"npm run server \" \"npm run start\" ",
+    "dev-server": "nodemon index.js",
+    "server": "concurrently \"npm run build \" \"node src/server.js \"",
+    "dev": "concurrently \"npm run dev-server \" \"npm run start\" ",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
