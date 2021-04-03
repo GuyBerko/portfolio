@@ -1,5 +1,6 @@
 .about-me-modal {
   max-width: fit-content !important;
+  margin: 1.75rem auto !important;
 }
 
 .about-me-modal-header {
@@ -31,6 +32,7 @@
 
 .pdf-document {
   cursor: pointer;
+  overflow: scroll;
 }
 
 .nav-item {
@@ -45,8 +47,8 @@
 a.carousel-control-next,
 a.carousel-control-prev {
   background-color: #000000;
-  height: 100px;
-  width: 100px;
+  width: 10vw;
+  height: 10vw;
   border-radius: 100%;
   top: 50%;
   transform: translateY(-50%);
@@ -70,4 +72,5 @@ a.carousel-control-prev {
 
 .carousel-item-image {
   max-width: 70%;
+  min-width: 250px;
 }
