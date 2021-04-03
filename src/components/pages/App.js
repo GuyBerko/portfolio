@@ -28,7 +28,7 @@ const App = () => {
               <DescriptionBlock onToggleModal={ onToggleModal } />
             </Col>
             <Col md="6" xs="10">
-              <img alt="profile" className='profile-photo' src={ ProfilePhoto } />
+              <img alt="profile" className='profile-photo nonselectable' src={ ProfilePhoto } />
             </Col>
           </Row>
           <Row>
