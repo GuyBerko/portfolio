@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import {
   Carousel,
   CarouselItem,
@@ -45,7 +44,7 @@ const projects = [
   }
 ];
 
-const ProjectsCarousel = props => {
+const ProjectsCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -76,7 +75,7 @@ const ProjectsCarousel = props => {
             onExited={ () => setAnimating(false) }
             key={ item.image }
           >
-            <div class="carousel-item-wrapper">
+            <div className="carousel-item-wrapper">
               <h2>{ item.name }</h2>
               <img className="carousel-item-image" src={ item.image } alt={ item.name } />
               <div className="carousel-item-description">
@@ -94,10 +93,6 @@ const ProjectsCarousel = props => {
       <CarouselControl direction="next" directionText="Next" onClickHandler={ next } />
     </Carousel>
   )
-};
-
-ProjectsCarousel.propTypes = {
-
 };
 
 export default ProjectsCarousel;
