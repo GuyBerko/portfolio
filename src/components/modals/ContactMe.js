@@ -53,14 +53,14 @@ const ContactMe = ({ isOpen, toggle }) => {
             Hey there :)
                     </h3>
           <p>
-            I will be happy to answer any of your questions. Just fill out the form and i will be in touch as soon as possible.
+            I will be happy to answer any of your questions. Just fill out the form and I will be in touch as soon as possible.
                     </p>
           <div className='or-wrapper'>
             <hr />
             <h4>Or</h4>
             <hr />
           </div>
-          <h6>just send me message directly at:</h6>
+          <h6>Just send me message directly at:</h6>
           <span>Email: <a href="mailto:mailofguy@gmail.com">mailofguy@gmail.com</a></span><br />
           <span>Phone: <a href="tel:+972-548114540">+972-548114540</a></span>
         </section>
