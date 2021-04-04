@@ -10,7 +10,7 @@ import website from '../assets/img/website-icon.png';
 const projects = [
   {
     name: 'XTickets',
-    description: 'XTicket is an application designated for buying and selling tickets. The application was built in a microservices design pattern. The backend was written with Node.js and typescript and the client was written with React server side rendering.',
+    description: 'XTicket is an application designed for buying and selling tickets. The application was built in a microservices design pattern. The backend was written with Node.js and typescript and the client was written with React server side rendering.',
     image: 'https://storage.googleapis.com/portfolio-309012/xtickets-desktop2.PNG',
     links: {
       site: 'https://xtickets.guy-berkovich.com',
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     name: 'Yazame',
-    description: 'Real estate calulator, designated for calculating the revenue and expenses for tma 38 projects. The application was built with php and js vanilla + JQuery.',
+    description: 'Real estate calulator, designed for calculating the revenue and expenses for tma 38 projects. The application was built with php and js vanilla + JQuery.',
     image: 'https://storage.googleapis.com/portfolio-309012/yazame-desktop.PNG',
     links: {
       site: 'https://yazame.co.il'
@@ -27,7 +27,7 @@ const projects = [
   },
   {
     name: 'Luckyy',
-    description: 'Real time chat application designated for tourists to be able to interact with tour guides. The application was built with node.js and React including a cms system and server side rendering.',
+    description: 'Real time chat application designed for tourists to be able to interact with tour guides. The application was built with node.js and React including a cms system and server side rendering.',
     image: 'https://storage.googleapis.com/portfolio-309012/luckyy-chat.PNG',
     links: {
       site: 'http://tipozz.herokuapp.com/'
