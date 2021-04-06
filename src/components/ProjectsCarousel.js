@@ -13,7 +13,7 @@ const projects = [
     description: 'XTicket is an application designed for buying and selling tickets. The application was built in a microservices design pattern. The backend was written with Node.js and typescript and the client was written with React server side rendering.',
     image: 'https://storage.googleapis.com/portfolio-309012/xtickets-desktop2.PNG',
     links: {
-      site: 'https://xtickets.guy-berkovich.com',
+      site: 'http://xtickets.guy-berkovich.com',
       github: 'https://github.com/GuyBerko/xtickets'
     }
   },
