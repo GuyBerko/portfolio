@@ -13,10 +13,11 @@ import {
     Row,
     Col,
 } from 'reactstrap';
-import CV from '../../assets/img/Guy-Berkovich-CV-1.jpg';
 
 import ProjectsCarousel from '../ProjectsCarousel';
 import '../../style/AboutMe.css';
+
+const cv = 'https://storage.googleapis.com/portfolio-309012/Guy-Berkovich-CV-1.jpg';
 
 const AboutMe = ({ isOpen, toggle }) => {
     const [activeTab, setActiveTab] = useState('1');
@@ -52,7 +53,7 @@ const AboutMe = ({ isOpen, toggle }) => {
                         <Row>
                             <Col sm="12">
                                 <img 
-                                    src={CV} 
+                                    src={ cv } 
                                     className='cv-image'
                                     onClick={ gotoDocs }
                                     alt="resume" />

@@ -5,10 +5,9 @@ import Footer from '../layout/Footer';
 import AboutMe from '../modals/AboutMe';
 import ContactMe from '../modals/ContactMe';
 import DescriptionBlock from '../DescriptionBlock';
-import ProfilePhoto from '../../assets/img/profile_photo_2.png';
 
 import '../../style/App.css';
-
+const profilePhoto = 'https://storage.googleapis.com/portfolio-309012/profile_photo_2.png';
 const App = () => {
   const [modals, setModal] = useState({
     aboutModal: false,
@@ -28,7 +27,7 @@ const App = () => {
               <DescriptionBlock onToggleModal={ onToggleModal } />
             </Col>
             <Col md="6" xs="10">
-              <img alt="profile" className='profile-photo nonselectable' src={ ProfilePhoto } />
+              <img alt="profile" className='profile-photo nonselectable' src={ profilePhoto } />
             </Col>
           </Row>
           <Row>
