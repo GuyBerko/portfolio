@@ -13,13 +13,10 @@ import {
     Row,
     Col,
 } from 'reactstrap';
-import { Document, Page, pdfjs } from "react-pdf";
-import CV from '../../assets/img/Guy-Berkovich-CV.pdf';
+import CV from '../../assets/img/Guy-Berkovich-CV-1.jpg';
 
 import ProjectsCarousel from '../ProjectsCarousel';
 import '../../style/AboutMe.css';
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const AboutMe = ({ isOpen, toggle }) => {
     const [activeTab, setActiveTab] = useState('1');
@@ -54,12 +51,11 @@ const AboutMe = ({ isOpen, toggle }) => {
                     <TabPane tabId="1">
                         <Row>
                             <Col sm="12">
-                                <Document
-                                    file={ CV }
-                                    className='pdf-document'
-                                    onClick={ gotoDocs }>
-                                    <Page pageNumber={ 1 } />
-                                </Document>
+                                <img 
+                                    src={CV} 
+                                    className='cv-image'
+                                    onClick={ gotoDocs }
+                                    alt="resume" />
                             </Col>
                         </Row>
                     </TabPane>

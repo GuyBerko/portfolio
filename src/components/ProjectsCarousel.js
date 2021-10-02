@@ -26,11 +26,11 @@ const projects = [
     }
   },
   {
-    name: 'Luckyy',
+    name: 'Guiderr',
     description: 'Real time chat application designed for tourists to be able to interact with tour guides. The application was built with node.js and React including a cms system and server side rendering.',
-    image: 'https://storage.googleapis.com/portfolio-309012/luckyy-chat.PNG',
+    image: 'https://storage.googleapis.com/portfolio-309012/guidder.PNG',
     links: {
-      site: 'http://tipozz.herokuapp.com/'
+      site: 'https://www.guiderr.co/'
     }
   },
   {

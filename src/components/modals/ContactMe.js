@@ -62,7 +62,8 @@ const ContactMe = ({ isOpen, toggle }) => {
           </div>
           <h6>Just send me message directly at:</h6>
           <span>Email: <a href="mailto:mailofguy@gmail.com">mailofguy@gmail.com</a></span><br />
-          <span>Phone: <a href="tel:+972-548114540">+972-548114540</a></span>
+          <span>Phone: <a href="tel:+972-548114540">+972-548114540</a></span><br />
+          <span>LinkedIn: <a href="https://www.linkedin.com/in/guy-berkovich-8a4892123/" target="_blank" rel="noreferrer">LinkedIn.com/guy-berkovich</a></span>
         </section>
         <section className='right-block'>
           <Form className='contact-form'>
