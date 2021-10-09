@@ -39,6 +39,10 @@ app.post('/api/contactForm', async (req, res) => {
   res.send({ success: true });
 });
 
+app.get('/sitemap.xml', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'sitemap.xml'));
+});
+
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
